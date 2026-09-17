@@ -1,0 +1,13 @@
+RECURSOS GRÁFICOS
+=================
+
+logo-sena.png
+Logosímbolo institucional utilizado en el contexto educativo.
+Fuente de consulta:
+https://commons.wikimedia.org/wiki/File:Logosimbolo_SENA_2022.svg
+
+tecnologia.png
+Imagen tecnológica creada para el proyecto educativo TecnoFácil y
+reutilizada en esta práctica académica.
+
+Los recursos se incluyen únicamente con fines educativos.

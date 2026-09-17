@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa para practicar HTML, CSS, JavaScript, Git y GitHub.">
+    <title>Feria Tecnológica ADSO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- APRENDIZ 1: puede modificar el encabezado y el menú. -->
+    <header class="encabezado">
+        <a class="marca" href="#inicio" aria-label="Ir al inicio">
+            <img src="img/logo-sena.png" alt="Logosímbolo del SENA">
+            <span>Feria Tecnológica ADSO</span>
+        </a>
+
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+            Menú
+        </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#aprendizaje">Aprendizaje</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- APRENDIZ 2: puede cambiar el título, la descripción o la imagen. -->
+        <section id="inicio" class="presentacion">
+            <div class="presentacion-texto">
+                <p class="etiqueta">Proyecto colaborativo</p>
+                <h1>Aprendemos tecnología construyendo juntos</h1>
+                <p>
+                    Esta página presenta una feria académica con actividades de HTML, CSS y JavaScript.
+                    También nos permite practicar cómo varias personas pueden mejorar un mismo proyecto
+                    utilizando Git y GitHub.
+                </p>
+                <button id="boton-mensaje" class="boton primario" type="button">Mostrar bienvenida</button>
+                <p id="mensaje-bienvenida" class="mensaje" aria-live="polite"></p>
+            </div>
+            <img class="imagen-principal" src="img/tecnologia.png" alt="Teclado utilizado para representar el aprendizaje tecnológico">
+        </section>
+
+        <!-- APRENDIZ 3: puede agregar, eliminar o modificar una tarjeta. -->
+        <section id="actividades" class="seccion">
+            <header class="titulo-seccion">
+                <div>
+                    <p class="etiqueta">Explorar</p>
+                    <h2>Actividades de la feria</h2>
+                </div>
+                <p>Seleccione una categoría para practicar una interacción sencilla con JavaScript.</p>
+            </header>
+
+            <div class="filtros" aria-label="Filtrar actividades">
+                <button class="filtro activo" type="button" data-filtro="todas">Todas</button>
+                <button class="filtro" type="button" data-filtro="html">HTML</button>
+                <button class="filtro" type="button" data-filtro="css">CSS</button>
+                <button class="filtro" type="button" data-filtro="js">JavaScript</button>
+            </div>
+
+            <div class="rejilla-actividades">
+                <article class="tarjeta" data-categoria="html">
+                    <span class="icono" aria-hidden="true">&lt;/&gt;</span>
+                    <p class="categoria">HTML</p>
+                    <h3>Estructura de una página</h3>
+                    <p>Reconocer títulos, párrafos, enlaces, imágenes, listas y secciones.</p>
+                </article>
+
+                <article class="tarjeta" data-categoria="css">
+                    <span class="icono" aria-hidden="true">Aa</span>
+                    <p class="categoria">CSS</p>
+                    <h3>Diseño y presentación</h3>
+                    <p>Modificar colores, tamaños, espacios, bordes y organización de los elementos.</p>
+                </article>
+
+                <article class="tarjeta" data-categoria="js">
+                    <span class="icono" aria-hidden="true">JS</span>
+                    <p class="categoria">JavaScript</p>
+                    <h3>Interacción básica</h3>
+                    <p>Responder a botones, mostrar mensajes y filtrar información en la página.</p>
+                </article>
+
+                <article class="tarjeta" data-categoria="html">
+                    <span class="icono" aria-hidden="true">🔗</span>
+                    <p class="categoria">HTML</p>
+                    <h3>Navegación interna</h3>
+                    <p>Utilizar enlaces para desplazarse entre las diferentes secciones.</p>
+                </article>
+
+                <article class="tarjeta" data-categoria="css">
+                    <span class="icono" aria-hidden="true">▦</span>
+                    <p class="categoria">CSS</p>
+                    <h3>Diseño adaptable</h3>
+                    <p>Organizar el contenido para que pueda verse en computador y teléfono.</p>
+                </article>
+
+                <article class="tarjeta" data-categoria="js">
+                    <span class="icono" aria-hidden="true">✓</span>
+                    <p class="categoria">JavaScript</p>
+                    <h3>Eventos del usuario</h3>
+                    <p>Detectar cuándo una persona selecciona un botón y ejecutar una acción.</p>
+                </article>
+            </div>
+
+            <p id="resultado-filtro" class="resultado" aria-live="polite">Se muestran 6 actividades.</p>
+        </section>
+
+        <!-- APRENDIZ 4: puede cambiar nombres, roles y descripciones del equipo. -->
+        <section id="equipo" class="seccion fondo-claro">
+            <header class="titulo-seccion centrado">
+                <div>
+                    <p class="etiqueta">Colaboración</p>
+                    <h2>Equipo de desarrollo</h2>
+                </div>
+                <p>Cada integrante trabaja en una parte y registra sus cambios con Git.</p>
+            </header>
+
+            <div class="rejilla-equipo">
+                <article class="integrante">
+                    <span aria-hidden="true">01</span>
+                    <h3>Contenido HTML</h3>
+                    <p>Organiza los títulos, párrafos, enlaces y tarjetas.</p>
+                </article>
+                <article class="integrante">
+                    <span aria-hidden="true">02</span>
+                    <h3>Estilos CSS</h3>
+                    <p>Define los colores, espacios y distribución visual.</p>
+                </article>
+                <article class="integrante">
+                    <span aria-hidden="true">03</span>
+                    <h3>Interacción JavaScript</h3>
+                    <p>Programa los botones, el menú y los filtros.</p>
+                </article>
+                <article class="integrante">
+                    <span aria-hidden="true">04</span>
+                    <h3>Revisión del proyecto</h3>
+                    <p>Comprueba los cambios antes de unirlos a la versión principal.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- APRENDIZ 5: puede mejorar o ampliar los pasos de aprendizaje. -->
+        <section id="aprendizaje" class="seccion">
+            <header class="titulo-seccion">
+                <div>
+                    <p class="etiqueta">Proceso</p>
+                    <h2>¿Cómo mejoramos el proyecto?</h2>
+                </div>
+            </header>
+
+            <ol class="pasos">
+                <li><strong>Descargar:</strong> obtener una copia del repositorio.</li>
+                <li><strong>Crear una rama:</strong> abrir un espacio para trabajar sin afectar la versión principal.</li>
+                <li><strong>Modificar:</strong> realizar un cambio pequeño y comprobarlo en el navegador.</li>
+                <li><strong>Guardar:</strong> crear un commit con una descripción clara.</li>
+                <li><strong>Compartir:</strong> subir la rama y solicitar que el equipo revise el cambio.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p><strong>Feria Tecnológica ADSO</strong> · Práctica educativa de Git y GitHub</p>
+        <p>HTML, CSS y JavaScript · <span id="anio"></span></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
